@@ -1,6 +1,6 @@
 {"intents": [
         {"tag": "greeting",
-         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day", "hello world"],
          "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
          "context": [""]
         },
@@ -60,7 +60,7 @@
         "context": ["get_movie_detail"]
         },
         {"tag": "close",
-        "patterns": ["close chatbot", "Catch ya later", "shutdown", "exit chatbot","exit","stpo"],
+        "patterns": ["close chatbot", "Catch ya later", "shutdown", "exit chatbot","exit","stpo", "quit"],
         "responses": ["type \"yes\" & send"],
         "context": ["shutdown"]
         }

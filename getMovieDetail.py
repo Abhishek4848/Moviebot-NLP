@@ -1,7 +1,7 @@
 import imdb
 ia = imdb.IMDb() 
 
-#Function to get all details of a movie
+#Function to get all details of a movie searched by user
 def searchbymovie(search):
     movies = ia.search_movie(search)
     id = movies[0].getID()

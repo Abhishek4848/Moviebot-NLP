@@ -1,0 +1,68 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks","okay","nice","wow"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": ["aads","not","as","the","qew"],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through Movies!!!", "I tell you the right movie for you xD"],
+         "context": [""]
+        },
+        {"tag": "blockbuster_movies",
+         "patterns": ["Which movies were blockbuster?","blockbuster movies", "hit movies", "top movies" ],
+         "responses": ["Fetching data ... (type \"yes\""],
+         "context": ["blockbuster_movies"]
+        },
+        {"tag": "search_genre",
+         "patterns": ["Give me the list of genre", "Can you list all the genre?", "What all genre are there?"],
+         "responses": ["Loading genre details"],
+         "context": ["List_of_genre"]
+        },
+        {"tag": "movie_search",
+         "patterns": ["Lookup for movie", "search movie by name", "get similar movies", "search movies similar to","similar movie search" ],
+         "responses": ["please provide movie name", "Tell the movie name"],
+         "context": ["search_movie_by_name"]
+        },
+        {"tag": "search_movie_by_genre",
+         "patterns": ["List all movies on", "Give me a list of movies based on genre","some movies on genre" , "movie genre","give movies based on genre"],
+         "responses": ["Please provide movie genre", "Tell the genre"],
+         "context": ["get_movie_by_genre"]
+        },
+        {"tag": "give_review",
+         "patterns": ["i want to give a review", "let me give a feedback", "give review","give feedback"],
+         "responses": ["Enter movie name"],
+         "context": ["get_review"]
+        },
+        {"tag": "user_review_reccomend",
+        "patterns": ["can you suggest me some movies", "reccomend me some movies", "i have no clue you reccomend me some movies","give movies based on my reviews","give movies based on my preference"],
+        "responses": ["getting movies for you based on your review history... (type \"yes\" & send)"],
+        "context": ["user_review_recc"]
+        },
+        {"tag": "movie_details",
+        "patterns": ["get movie detail", "show movie detail", "get plot","info about movie","information about"],
+        "responses": ["getting details..... (type \"yes\""],
+        "context": ["get_movie_detail"]
+        },
+        {"tag": "close",
+        "patterns": ["close chatbot", "Catch ya later", "shutdown", "exit chatbot","exit","stpo"],
+        "responses": ["type \"yes\" & send"],
+        "context": ["shutdown"]
+        }
+   ]
+}

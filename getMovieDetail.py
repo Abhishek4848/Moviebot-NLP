@@ -1,6 +1,7 @@
 import imdb
 ia = imdb.IMDb() 
 
+#Function to get all details of a movie
 def searchbymovie(search):
     movies = ia.search_movie(search)
     id = movies[0].getID()
@@ -30,7 +31,7 @@ def searchbymovie(search):
     movdetails.append(desc)
     return (movdetails)
 
-    
+#Function to get the blockuster movies of a year   
 def blockbuster(search):
     movlist = []
     blocklist = []

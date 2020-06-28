@@ -1,5 +1,5 @@
 import imdb
-ia = imdb.IMDb() 
+ia = imdb.IMDb()
 
 #Function to get all details of a movie searched by user
 def searchbymovie(search):

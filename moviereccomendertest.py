@@ -27,6 +27,8 @@ def cosine_recommendations(title):
     movie_indices = [i[0] for i in sim_scores]
     l = list(titles.iloc[movie_indices].head(5))
     return l
+
+    
 def failsafe(title):
     df = pd.read_csv('movies.csv')
     l = list(df['title'])

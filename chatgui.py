@@ -297,9 +297,8 @@ def send():
         res, act = chatbot_response(msg)
         ChatLog.insert(END, "Bot: " + res + '\n\n')
         if act == 'List_of_genre':
-            Genre = '''Action \nAdult \nAdventure \nAnimation \nBiography \nComedy \nCrime \nDocumentary \nDrama\
-            \nFamily \nFantasy \nFilm-Noir \nGame-Show \nHistory \nHorror \nMusic \nMusical \nMystery \nNews\
-            \nReality-TV \nRomance \nSci-Fi \nSport \nThriller \nWar \nWestern'''
+            Genre = '''>> Action \n>> Adult \n>> Adventure \n>> Animation \n>> Biography \n>> Comedy \n>> Crime \n>> Documentary \n>> Drama\
+            \n>> Family \n>> Fantasy \n>> Film-Noir \n>> History \n>> Horror \n>> Mystery \n>> Reality-TV \n>> Romance \n>> Sci-Fi \n>> Sport \n>> Thriller \n>> War \n>> Western'''
             ChatLog.insert(END, "Bot: There you go\n" + Genre + '\n\n')
         ChatLog.config(state=DISABLED)
         ChatLog.yview(END)

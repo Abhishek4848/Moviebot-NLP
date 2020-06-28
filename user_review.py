@@ -74,6 +74,7 @@ def entry(error=''):
                 pass
             if user_id in logid:
                 n = logid.index(user_id)
+                # getting user name from user_data.csv 
                 user_name = user_data.at[n,'user-name']
                 Login.destroy()
             else:
@@ -82,7 +83,7 @@ def entry(error=''):
                 entry(error = 'LogIn !uid')
 
         userIdLabel = Label(Login, text = "User Id", font='Arial').place(x = 170, y = 100)
-        userId = StringVar()
+        userId = StringVar()   #variable for gettting user-id from user
         userIdEntry = Entry(Login, textvariable=userId, width = 25).place(x = 125, y = 140)
         login = Button(Login, text = 'Login',command = Log).place(x=175, y = 170)
         Login.mainloop()
@@ -202,15 +203,4 @@ def tableupdater(uid,mid,rating):
     df.loc[ind] = l
     df.to_csv('ratings.csv',index_label=False)
 
-print(movieIdFinder('avengers'))
-# In[12]:
-
-
-
-
-# In[13]:
-
-
-
-
-# 
+ 

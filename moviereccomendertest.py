@@ -28,7 +28,11 @@ def cosine_recommendations(title):
     l = list(titles.iloc[movie_indices].head(5))
     return l
 
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 55089b377bb883a863eafa24dd837fb5a4c817a8
 def failsafe(title):
     df = pd.read_csv('movies.csv')
     l = list(df['title'])

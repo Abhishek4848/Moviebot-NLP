@@ -315,6 +315,9 @@ base.resizable(width=False, height=FALSE)
 #base = widget()
 #Create Chat window
 ChatLog = Text(base, bd=0, bg="white", height="8", width="50", font="Arial",)
+# show user-name & id 
+ChatLog.config(font = ("Arial",12))
+ChatLog.insert(END, f'\t User Name: {user_name} \n\n\t User Id: {user_id}')
 
 ChatLog.config(state=DISABLED)
 

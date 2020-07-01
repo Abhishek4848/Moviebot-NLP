@@ -10,7 +10,7 @@ Moviebot will recommend a movie based on the user's choice and will also accept 
 5. Get list of blockbuster movies by year
 
 
-### Dependencies
+## Dependencies
 - nltk
 - pickle
 - numpy
@@ -21,5 +21,6 @@ Moviebot will recommend a movie based on the user's choice and will also accept 
 - textblob
 
 ## Contributors:
+- @Abhishek4848
 - @abhishek-pes
 - @pavan-n-654

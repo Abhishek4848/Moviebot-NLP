@@ -19,6 +19,7 @@ Moviebot will recommend a movie based on the user's choice and will also accept 
 - tkinter
 - imdbpy
 - textblob
+- joblib
 
 ## To run this project
 Clone this repository 

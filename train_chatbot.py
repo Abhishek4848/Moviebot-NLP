@@ -24,7 +24,7 @@ for intent in intents['intents']:
         #tokenize each word
         w = nltk.word_tokenize(pattern)
         words.extend(w)
-        #add documents in the corpus
+        # add documents in the corpus
         documents.append((w, intent['tag']))
 
         # add to our classes list

@@ -56,7 +56,7 @@
         },
         {"tag": "movie_details",
         "patterns": ["get movie detail", "show movie detail", "get plot","info about movie","information about"],
-        "responses": ["getting details..... (type \"yes\""],
+        "responses": ["getting details..... (type \"yes\" & send)"],
         "context": ["get_movie_detail"]
         },
         {"tag": "close",

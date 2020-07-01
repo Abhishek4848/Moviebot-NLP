@@ -153,19 +153,11 @@ saved_model = pickle.dumps(final_model)
 
 # In[47]:
 
+import joblib
 
-def getreviewd(review):
-    test = cv.transform([review])
-    model_from_picle = pickle.loads(saved_model)
-    pred = final_model.predict(test)
-    if(pred[0] == 1):
-        print("Thank you for positive review we will consider this while reccomending you movies next time")
-    elif(pred[0] == 0):
-        print("Negative review detected , we will consider this while reccomending you movies next time")
+filename = 'vectorizer'
+fileName = 'review_analyser'
+joblib.dump(final_model, fileName)
+joblib.dump(cv,filename)
 
-
-# In[50]:
-
-
-getreviewd('It was an amazingly insane fabulous good movie')
 

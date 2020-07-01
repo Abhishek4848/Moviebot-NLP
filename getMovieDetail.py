@@ -34,14 +34,9 @@ def searchbymovie(search):
 #Function to get the blockuster movies of a year   
 def blockbuster(search):
     movlist = []
-    blocklist = []
     topmovies = ia.get_top250_movies()
     for i in range (len(topmovies)): 
             if topmovies[i]['year'] == search:
                 movlist.append(topmovies[i]['title'])
-    if movlist: 
-        for m in  movlist:
-            blocklist.append(m)
-    else:
-        print("List will be updated soon..")
-    return(blocklist)
+
+    return(movlist)

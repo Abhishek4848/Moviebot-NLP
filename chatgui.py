@@ -97,30 +97,18 @@ def reccomender_engine():
                     global SendButton
                     SendButton.config(command = send)
                 else:
-                    '''
-                    movie_list = moviereccomendertest.simple_fuzzymatcher(msg)
-                    if movie_list != []:
-                        ChatLog.insert(END, 'Bot: did you mean\n\n')
-                        for movie in movie_list:
-                            ChatLog.insert(END, movie  + '\n\n')
-                        ChatLog.insert(END, "Bot: Please provide movie name\n\n")
-                        reccomender_engine()
-                    else:
-                        ChatLog.insert(END, "Bot: Nothing found!\n\n")
-                    '''
+                  
                     ia = IMDb()
                     exp_movie = ia.search_movie(msg)
                     l = []
                     try:
                         movie = ia.get_keyword(msg)
-                        #gl = (random.sample(movie['genres'],1))
-                        #movie_list = movie_reccomendation_genre.searchbygenre(str(gl[0]))
                         ChatLog.insert(END,'Bot: there you go...\n\n')
                         for movie in random.sample(movie, 5):
                             ChatLog.insert(END, f"{' '*5}{movie}\n")
                                     
                     except:
-                        ChatLog.insert(END,"sorry nothing found")
+                        ChatLog.insert(END,"sorry nothing found\n\n")
                     SendButton.config(command = send)
         elif('get_movie_by_genre' == action):
             try:
@@ -136,7 +124,7 @@ def reccomender_engine():
                     ChatLog.config(state = NORMAL)
                     ChatLog.insert(END, user_name+ ': ' + opt + '\n\n')
                     if 'y' in opt.lower():
-                        ChatLog.insert(END, "Bot: Thats Great")
+                        ChatLog.insert(END, "Bot: Thats Great\n\n")
                         SendButton.config(command=send)
                     else:
                         ChatLog.insert(END, f"Bot: Hope you like these suggestions\n\n")
@@ -145,7 +133,7 @@ def reccomender_engine():
                         ChatLog.insert(END, f"{' '*5}Are you satisfied with the suggestions ?\n\n")
                 SendButton.config(command = recurr)
             except:
-                ChatLog.insert(END,"Bot: sorry we ran into a problem please try again")
+                ChatLog.insert(END,"Bot: sorry we ran into a problem please try again\n\n")
                 SendButton.config(command = send)
 
         elif('get_review' == action):
@@ -216,23 +204,7 @@ def reccomender_engine():
                     ChatLog.insert(END, f"{' '*5}{movie}\n\n")
                 ChatLog.insert(END, f"{' '*5}Hope you like these suggestion\n\n")
                 SendButton.config(command = send)
-                '''
-                def recurr():
-                    global SendButton
-                    opt = EntryBox.get('1.0', 'end-1c').strip()
-                    EntryBox.delete("0.0", END)
-                    ChatLog.config(state = NORMAL)
-                    ChatLog.insert(END, user_name+ ': ' + opt + '\n\n')
-                    if 'y' in opt.lower():
-                        ChatLog.insert(END, "Bot: Thats Great")
-                        SendButton.config(command=send)
-                    else:
-                        ChatLog.insert(END, f"Bot: Hope you like these suggestions\n\n")
-                        for movie in random.sample(movielist, 5):
-                            ChatLog.insert(END, f"{' '*5}{movie}\n\n")
-                        ChatLog.insert(END, f"{' '*5}Are you satisfied with the suggestions ?\n\n")
-                SendButton.config(command = recurr)
-                '''
+                
 
         elif('get_movie_detail' == action):
             ChatLog.insert(END, "Bot: Enter the name of the movie:\n\n")
@@ -317,7 +289,8 @@ base.resizable(width=False, height=FALSE)
 ChatLog = Text(base, bd=0, bg="white", height="8", width="50", font="Arial",)
 # show user-name & id 
 ChatLog.config(font = ("Arial",12))
-ChatLog.insert(END, f'\t User Name: {user_name} \n\n\t User Id: {user_id}')
+ChatLog.insert(END, f'\t User Name: {user_name} \n\n\t User Id: {user_id}\n\n')
+ChatLog.insert(END, f'Bot: Hi there {user_name} \n\n')
 
 ChatLog.config(state=DISABLED)
 

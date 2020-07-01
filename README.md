@@ -1,4 +1,4 @@
-# Moviebot-NLP
+# Moviebot
 Recommender System is a system that seeks to predict or filter preferences according to the user’s choices.
 Moviebot will recommend a movie based on the user's choice and will also accept movie reviews from the user for better recomendations.
 

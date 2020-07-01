@@ -10,7 +10,7 @@
          "context": [""]
         },
         {"tag": "thanks",
-         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks","okay","nice","wow"],
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks","okay","nice","wow","okay", "ok", "kk"],
          "responses": ["Happy to help!", "Any time!", "My pleasure"],
          "context": [""]
         },

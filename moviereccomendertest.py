@@ -37,4 +37,8 @@ def failsafe(title):
         return flag
     else:
         flag = 'pass'
+<<<<<<< HEAD
     return flag
+=======
+        return flag
+>>>>>>> f87f0d7273d38c8160da02a377e2b38a4f1867d4

@@ -1,5 +1,6 @@
 # Moviebot-NLP
-A movie recommender system which will allow recommend a movie based on their choice and will also allow the user to give feedback about that, so that the next time the system recommends the movie accordingly.
+Recommender System is a system that seeks to predict or filter preferences according to the user’s choices.
+Moviebot will recommend a movie based on the user's choice and will also accept movie reviews from the user for better recomendations.
 
 ## Dependencies
 - nltk
@@ -10,3 +11,11 @@ A movie recommender system which will allow recommend a movie based on their cho
 - tkinter
 - imdbpy
 - textblob
+
+### Features:
+1. Get movie recomendations based on user review (sentiment analysis)
+2. Responsive chatbot
+3. Search movie by genre
+4. Get all details about a movie
+5. Get list of blockbuster movies by year
+

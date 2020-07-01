@@ -20,4 +20,6 @@ Moviebot will recommend a movie based on the user's choice and will also accept 
 - imdbpy
 - textblob
 
-
+## Contributors:
+- @abhishek-pes
+- @pavan-n-654

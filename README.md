@@ -20,7 +20,16 @@ Moviebot will recommend a movie based on the user's choice and will also accept 
 - imdbpy
 - textblob
 
-## Contributors:
-- @Abhishek4848
-- @abhishek-pes
-- @pavan-n-654
+## To run this project
+Clone this repository 
+```
+git clone https://github.com/Abhishek4848/Moviebot-NLP.git
+```
+Train the model 
+```
+python3 train_chatbot.py
+```
+Run the chatbot
+```
+python3 chatgui.py
+```
